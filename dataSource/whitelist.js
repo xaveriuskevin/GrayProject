@@ -1,0 +1,7 @@
+module.exports = {
+  leaves: [
+    "0x818833a439DA3a34253304993A78052644237855",
+    "0xe3f67c7ad8Af0dFFe5C17b397cAf94582306ec4B",
+    "0x409d3543754C0629dCEA5A1DAA7d8edD72AaDdfE",
+  ],
+};

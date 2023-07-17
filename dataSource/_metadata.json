@@ -1,0 +1,222 @@
+[
+  {
+    "name": "KickAss #1",
+    "description": "this is one",
+    "image": "ipfs://abc/1.png",
+    "edition": 1,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Number"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #2",
+    "description": "this is four leaf clover necklace",
+    "image": "ipfs://abc/2.png",
+    "edition": 2,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Things"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #3",
+    "description": "this is four leaf clover necklace",
+    "image": "ipfs://abc/3.png",
+    "edition": 3,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Things"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #4",
+    "description": "this is one",
+    "image": "ipfs://abc/4.png",
+    "edition": 4,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Number"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #5",
+    "description": "this is one",
+    "image": "ipfs://abc/5.png",
+    "edition": 5,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Number"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #6",
+    "description": "this is four leaf clover necklace",
+    "image": "ipfs://abc/6.png",
+    "edition": 6,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Things"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #7",
+    "description": "this is four leaf clover necklace",
+    "image": "ipfs://abc/7.png",
+    "edition": 7,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Things"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #8",
+    "description": "this is four leaf clover necklace",
+    "image": "ipfs://abc/8.png",
+    "edition": 8,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Red"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Things"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #9",
+    "description": "this is one",
+    "image": "ipfs://abc/9.png",
+    "edition": 9,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Number"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #10",
+    "description": "this is three yellow cats",
+    "image": "ipfs://abc/10.png",
+    "edition": 10,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Animal"
+      },
+      {
+        "trait_type": "Legendary",
+        "value": "Cats"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #11",
+    "description": "this is one",
+    "image": "ipfs://abc/11.png",
+    "edition": 11,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Black"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Number"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #12",
+    "description": "this is three yellow cats",
+    "image": "ipfs://abc/12.png",
+    "edition": 12,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Yellow"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Animal"
+      },
+      {
+        "trait_type": "Legendary",
+        "value": "Cats"
+      }
+    ]
+  },
+  {
+    "name": "KickAss #13",
+    "description": "this is two rabbits",
+    "image": "ipfs://abc/13.png",
+    "edition": 13,
+    "attributes": [
+      {
+        "trait_type": "Background",
+        "value": "Blue"
+      },
+      {
+        "trait_type": "Type",
+        "value": "Animal"
+      },
+      {
+        "trait_type": "Legendary",
+        "value": "Rabbits"
+      }
+    ]
+  }
+]
