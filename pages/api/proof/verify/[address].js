@@ -1,7 +1,7 @@
 const { MerkleTree } = require("merkletreejs");
 const keccak256 = require("keccak256");
 const { ethers } = require("ethers");
-const whitelist = require("../../../dataSource/whitelist.js");
+const whitelist = require("../../../../dataSource/whitelist.js");
 
 const leaves = whitelist.leaves.map((x) =>
   keccak256(ethers.solidityPacked(["address"], [x]))
@@ -16,12 +16,14 @@ export default function handler(req, res) {
   if (!ethers.isAddress(address)) {
     return res.status(400).json({ result: "InvalidAddress" });
   }
+
   const encodedUser = keccak256(ethers.solidityPacked(["address"], [address]));
 
   const proof = tree.getHexProof(encodedUser);
 
+  const verify = tree.verify(proof, encodedUser, root);
+
   return res.status(200).json({
-    root: root,
-    proof: proof,
+    verify: verify,
   });
 }
