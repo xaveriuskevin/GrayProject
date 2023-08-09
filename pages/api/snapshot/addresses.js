@@ -117,10 +117,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1airdrop_type.BigDaddyCrimson.push(owner.nftHolders);
           offset += 50;
         }
@@ -133,10 +129,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1airdrop_type.BigDaddyGold.push(owner.nftHolders);
           offset += 50;
         }
@@ -149,10 +141,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1airdrop_type.BigDaddySilver.push(owner.nftHolders);
           offset += 50;
         }
@@ -166,10 +154,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.MFKRSmokeScreen.push(owner.nftHolders);
           offset += 50;
         }
@@ -182,10 +166,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.MFKRChrome.push(owner.nftHolders);
           offset += 50;
         }
@@ -198,10 +178,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.MFKRClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -214,10 +190,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.KickAssBloodRed.push(owner.nftHolders);
           offset += 50;
         }
@@ -230,10 +202,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.KickAssWarpSpeed.push(owner.nftHolders);
           offset += 50;
         }
@@ -246,10 +214,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.KickAssClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -262,10 +226,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.HitGirlBlueBlood.push(owner.nftHolders);
           offset += 50;
         }
@@ -278,10 +238,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.HitGirlRainbow.push(owner.nftHolders);
           offset += 50;
         }
@@ -294,10 +250,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol1_type.HitGirlClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -312,10 +264,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.MFKRvsBigDaddyDoubleKOVioletSpecial.push(
             owner.nftHolders
           );
@@ -330,10 +278,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.MFKRvsBigDaddyDoubleKOClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -346,10 +290,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.MFKRvsBigDaddyDoubleKO.push(owner.nftHolders);
           offset += 50;
         }
@@ -362,10 +302,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.HitGirlandKickAssMidnightSpecial.push(
             owner.nftHolders
           );
@@ -380,10 +316,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.HitGirlandKickAssInfrared.push(owner.nftHolders);
           offset += 50;
         }
@@ -396,10 +328,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.HitGirlandKickAssClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -412,10 +340,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.KickAssBatonPaintSpecial.push(owner.nftHolders);
           offset += 50;
         }
@@ -428,10 +352,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.KickAssBatonClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -444,10 +364,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.KickAssBatonPixel.push(owner.nftHolders);
           offset += 50;
         }
@@ -460,10 +376,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.HitGirlSkyscraperBlueprintSpecial.push(
             owner.nftHolders
           );
@@ -478,10 +390,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.HitGirlSkyscraperSolarFlare.push(owner.nftHolders);
           offset += 50;
         }
@@ -494,10 +402,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.HitGirlSkyscraperClassic.push(owner.nftHolders);
           offset += 50;
         }
@@ -510,10 +414,6 @@ const handlers = async (req, res) => {
         let offset = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
-          for (let k in owner.nftHolders) {
-            delete owner.nftHolders[k].accountId;
-            delete owner.nftHolders[k].tokenId;
-          }
           kickassvol2_type.KickAssAzureSpecial.push(owner.nftHolders);
           offset += 50;
         }
