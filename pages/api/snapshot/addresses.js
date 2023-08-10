@@ -600,7 +600,7 @@ const handlers = async (req, res) => {
   collectionsNft.kickassvol2.push(kickassvol2_type);
   collectionsNft.kickassvol1airdrop.push(kickassvol1airdrop_type);
   container.snapshot.push(collectionsNft);
-  fs.writeFileSync("test.json", JSON.stringify(container));
+  fs.writeFileSync("grayarea_snapshot_holders.json", JSON.stringify(container));
   console.log("Success Generate Script");
 
   return res.status(200).json({
