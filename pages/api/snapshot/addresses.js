@@ -110,16 +110,24 @@ const handlers = async (req, res) => {
     let nftInfo = await nftDatas(collectionId);
 
     for (let j in nftInfo) {
+      //Kick ass vol 1 Airdrop
       if (nftInfo[j].nftId == process.env.BigDaddyCrimson) {
         let totalNum = await nftHandlers(nftInfo[j].nftData);
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1airdrop_type.BigDaddyCrimson.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("Big Daddy Crimson = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.BigDaddyGold) {
@@ -127,11 +135,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1airdrop_type.BigDaddyGold.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("Big Daddy Gold = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.BigDaddySilver) {
@@ -139,11 +154,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1airdrop_type.BigDaddySilver.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("Big Daddy Silver = " + totalAmount);
       }
 
       //Kick Ass Vol 1
@@ -152,11 +174,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.MFKRSmokeScreen.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("MFKRSmokeScreen = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.MFKRChrome) {
@@ -164,11 +193,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.MFKRChrome.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("MFKRChrome = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.MFKRClassic) {
@@ -176,11 +212,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.MFKRClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("MFKRClassic = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssBloodRed) {
@@ -188,11 +231,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.KickAssBloodRed.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssBloodRed = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssWarpSpeed) {
@@ -200,11 +250,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.KickAssWarpSpeed.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssWarpSpeed = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssClassic) {
@@ -212,11 +269,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.KickAssClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssClassic = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlBlueBlood) {
@@ -224,11 +288,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.HitGirlBlueBlood.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlBlueBlood = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlRainbow) {
@@ -236,11 +307,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.HitGirlRainbow.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlRainbow = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlClassic) {
@@ -248,11 +326,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol1_type.HitGirlClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlClassic = " + totalAmount);
       }
 
       //Kick Ass Vol 2
@@ -262,13 +347,20 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.MFKRvsBigDaddyDoubleKOVioletSpecial.push(
             owner.nftHolders
           );
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("MFKRvsBigDaddyDoubleKOVioletSpecial = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.MFKRvsBigDaddyDoubleKOClassic) {
@@ -276,11 +368,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.MFKRvsBigDaddyDoubleKOClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("MFKRvsBigDaddyDoubleKOClassic = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.MFKRvsBigDaddyDoubleKO) {
@@ -288,11 +387,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.MFKRvsBigDaddyDoubleKO.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("MFKRvsBigDaddyDoubleKO = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlandKickAssMidnightSpecial) {
@@ -300,13 +406,20 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.HitGirlandKickAssMidnightSpecial.push(
             owner.nftHolders
           );
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlandKickAssMidnightSpecial = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlandKickAssInfrared) {
@@ -314,11 +427,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.HitGirlandKickAssInfrared.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlandKickAssINfrared = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlandKickAssClassic) {
@@ -326,11 +446,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.HitGirlandKickAssClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlandKickAssClassic = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssBatonPaintSpecial) {
@@ -338,11 +465,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.KickAssBatonPaintSpecial.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssBatonPaintSpecial = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssBatonClassic) {
@@ -350,11 +484,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.KickAssBatonClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssBatonClassic = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssBatonPixel) {
@@ -362,11 +503,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.KickAssBatonPixel.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssBatonPixel = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlSkyscraperBlueprintSpecial) {
@@ -374,13 +522,20 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.HitGirlSkyscraperBlueprintSpecial.push(
             owner.nftHolders
           );
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlSkyscraperBlueprintSpecial = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlSkyscraperSolarFlare) {
@@ -388,11 +543,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.HitGirlSkyscraperSolarFlare.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlSkyscraperSolarflare = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.HitGirlSkyscraperClassic) {
@@ -400,11 +562,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.HitGirlSkyscraperClassic.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("HitGirlSkyscraperClassic = " + totalAmount);
       }
 
       if (nftInfo[j].nftId == process.env.KickAssAzureSpecial) {
@@ -412,11 +581,18 @@ const handlers = async (req, res) => {
         let loop = totalNum.totalNum / 50;
         let looping = ~~loop + 1;
         let offset = 0;
+        let totalAmount = 0;
         for (let h = 0; h < looping; h++) {
           let owner = await nftHandlers(nftInfo[j].nftData, offset);
           kickassvol2_type.KickAssAzureSpecial.push(owner.nftHolders);
+          let total = Object.values(owner.nftHolders).reduce(
+            (t, { amount }) => t + parseInt(amount),
+            0
+          );
+          totalAmount += total;
           offset += 50;
         }
+        console.log("KickAssAzureSpecial = " + totalAmount);
       }
     }
   }
@@ -425,7 +601,7 @@ const handlers = async (req, res) => {
   collectionsNft.kickassvol1airdrop.push(kickassvol1airdrop_type);
   container.snapshot.push(collectionsNft);
   fs.writeFileSync("test.json", JSON.stringify(container));
-  console.log("test");
+  console.log("Success Generate Script");
 
   return res.status(200).json({
     verify: "Success",
