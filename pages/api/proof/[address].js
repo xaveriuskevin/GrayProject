@@ -1,7 +1,7 @@
 const { MerkleTree } = require("merkletreejs");
 const keccak256 = require("keccak256");
 const { ethers } = require("ethers");
-const whitelist = require("../../../dataSource/whitelist.js");
+const whitelist = require("../../../dataSource/whitelistMerkleProof.js");
 
 const leaves = whitelist.leaves.map((x) =>
   keccak256(ethers.solidityPacked(["address"], [x]))
