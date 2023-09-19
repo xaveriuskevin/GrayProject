@@ -1,8 +1,8 @@
 "use strict";
-import supabase from "../../../config/supabaseClient";
+import supabase from "../../config/supabaseClient";
 
 export default async function handler(req, res) {
-  const request = req.query;
+  const request = req.body;
 
   let { data } = await supabase
     .from("referral")

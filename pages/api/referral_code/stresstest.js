@@ -1,7 +1,7 @@
 "use strict";
 
 const randomstring = require("randomstring");
-const crypto = require("crypto");
+const crypto = require("crypto-js");
 const fs = require("fs");
 
 export default async function handler(req, res) {
@@ -17,15 +17,9 @@ export default async function handler(req, res) {
       "-" +
       Date.now();
 
-    let referral_code_raw =
-      "ESP-" +
-      crypto
-        .createHash("sha256")
-        .update(postfix)
-        .digest("base64")
-        .substring(0, 7);
+    let referral_code_raw = "ESP-" + crypto.SHA3(postfix);
 
-    let referral_code = referral_code_raw.toString().replace(/\//g, "A");
+    let referral_code = referral_code_raw.substring(0, 11);
 
     container.push(referral_code);
   }
