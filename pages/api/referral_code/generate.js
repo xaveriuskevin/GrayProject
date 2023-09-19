@@ -1,10 +1,18 @@
 "use strict";
 import supabase from "../../config/supabaseClient";
+import myConfig from "../../config/development";
 const randomstring = require("randomstring");
 const crypto = require("crypto-js");
 
 export default async function handler(req, res) {
   const request = req.body;
+  const apiKey = req.headers[myConfig.headerKey];
+
+  if (apiKey != process.env.apiKey) {
+    return res.status(500).json({
+      message: "Wrong Crendentials",
+    });
+  }
 
   let { data } = await supabase
     .from("referral")
