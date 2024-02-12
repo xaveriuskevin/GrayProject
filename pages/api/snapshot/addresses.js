@@ -1,3 +1,5 @@
+"use strict";
+import supabase from "../../../config/supabaseClient";
 const axios = require("axios");
 const fs = require("fs");
 
@@ -12,11 +14,16 @@ let nftHandlers = async () => {
 
 const handlers = async (req, res) => {
   let collectionHandlers = await nftHandlers();
-  let total = 0;
   for (let i in collectionHandlers.items) {
     let handlers = collectionHandlers.items[i];
-    total = total + parseInt(handlers.value);
-    console.log(total);
+    let address = handlers.address.hash;
+    let value = handlers.value;
+
+    const { error } = await supabase.from("ss_data").insert({
+      address: address,
+      value: value,
+    });
+    console.log(error);
   }
   return res.status(200).json("Success");
 };
